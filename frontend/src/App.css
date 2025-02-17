@@ -1,0 +1,288 @@
+/* General Styles for App */
+.App {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa; /* Light background for the app */
+}
+
+.app-container {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  padding-bottom: 50px;
+}
+body{
+  /* background-color: #fff; */
+  background-color: #FFF2D8;
+  /* background-color: #FFDF9E; */
+  /* background-color: #DED2C5; */
+  /* background-color: #fff5d7; */
+  /* background-color: #fff0df; */
+}
+
+.header {
+  height: 220px;
+  overflow: hidden;
+  text-align: center;
+}
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -300px;
+  z-index: -1;
+}
+.header-txt{
+  margin-bottom: 40px;
+
+}
+
+.header-txt h1 {
+  font-size: 36px;
+  /* color: #007bff; */
+  color: #0d52d2;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls-status-container {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .controls-status-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Forms and Input Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-bottom: 40px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.form-container {
+  background-color: #f4f4f4;
+}
+.form-container {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h2, .form-title, .controls-header, .status-header {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.config-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 400px;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 5px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Button Styling */
+button.start-stop {
+  margin: 10px;
+  padding: 12px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+.start-stop-container{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.start-stop.start {
+  background-color: #28a745; /* Green for start */
+  color: white;
+}
+
+button.start-stop.stop {
+  background-color: #dc3545; /* Red for stop */
+  color: white;
+}
+
+button.start-stop:hover {
+  opacity: 0.8;
+}
+
+button.start-stop:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Status View Styling */
+.status-view-container {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-view-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.status-view-container button:hover {
+  background-color: #0056b3;
+}
+
+.view-status-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  width: 180px;
+  transition: all 0.3s ease;
+}
+
+.view-status-btn:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+.view-status-btn:hover {
+  background-color: #0056b3;
+}
+
+.status-message {
+  margin-top: 20px;
+  /* background-color: #f8f9fa; */
+  border-radius: 6px;
+  width: 80%;
+  max-width: 500px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.status-message p{
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .controls-status-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .view-status-btn {
+    width: 150px;
+  }
+
+  .status-message {
+    width: 90%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -48,5 +48,5 @@ This project is a **Ticket Management System** built using **Spring Boot** for t
 
 1. **Clone the Repository**:
    ```bash
-   https://github.com/R-Tharanka/aq.git
+   https://github.com/R-Tharanka/ticket-management-sw.git
    ```

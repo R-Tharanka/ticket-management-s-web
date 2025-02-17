@@ -1,3 +1,4 @@
+
 # Ticket Management System
 
 This project is a **Ticket Management System** built using **Spring Boot** for the backend and **React.js** for the frontend. It simulates a ticketing system with functionalities for configuring ticket pools, managing vendors and customers, viewing system status, and processing tickets concurrently.
